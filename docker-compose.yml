@@ -1,0 +1,14 @@
+version: '3.9'
+services: 
+  backend:
+    build:
+      context: backend/
+      dockerfile: Dockerfile
+    container_name: social_chat_backend
+    depends_on: 
+      - mongo
+    ports: 
+      - '$FASTAPI_PORT:8000' # localhost port : dockerfile port
+    restart: always
+    volumes: 
+      - ./backend:/app # all files in folder are connected with container
