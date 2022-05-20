@@ -4,7 +4,7 @@ services:
     build:
       context: backend/
       dockerfile: Dockerfile
-    container_name: social_chat_backend
+    container_name: test_425_apidev_backend
     depends_on: 
       - mongo
     ports: 
