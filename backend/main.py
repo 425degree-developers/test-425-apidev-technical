@@ -26,7 +26,7 @@ load_dotenv(dotenv_path=env_path)
 ## -------- Line App Setup --------
 line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
 handler = WebhookHandler(os.getenv("LINE_CHANNEL_SECRET"))
-line_channel_name = os.getenv("LINE_CHANNEL_NAME", "p_ae")
+line_channel_name = os.getenv("LINE_CHANNEL_NAME", "test-425-apidev-technical")
 log_replies_db_name = f"log_replies_{line_channel_name}"
 
 ## Line Stickers shorthand
