@@ -5,8 +5,6 @@ services:
       context: backend/
       dockerfile: Dockerfile
     container_name: test_425_apidev_backend
-    depends_on: 
-      - mongo
     ports: 
       - '$FASTAPI_PORT:8000' # localhost port : dockerfile port
     restart: always
